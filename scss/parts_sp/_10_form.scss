@@ -1,0 +1,31 @@
+.ticket-form {
+    label {
+        color: #f5cd5d;
+    }
+    .item {
+        margin-bottom: 10px;
+    }
+    .txt {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    input, select, textarea {
+        border: 1px solid #f5cd5d;
+    }
+    .mface-text span {
+        color: #f5cd5d !important;
+    }
+    .mface-red {
+        color: #f5cd5d !important;
+    }
+    option {
+        color: #000 !important;
+    }
+    input[name="year-3"] {
+        width: 60px !important;
+    }
+    .maker {
+        text-align: right;
+        font-size: 6px;
+    }
+}

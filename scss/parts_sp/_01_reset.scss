@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body,
+div,
+ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+p,a,
+img,
+table,th,td,
+dl,dt,dd,
+form {
+    margin:0;
+    padding:0;
+    border:none;
+    color: #fff;
+    font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+ul,
+ul ul,
+ul ul ul {
+    list-style:none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+/* clearfix
+------------------------------------------------------------*/
+.clearfix {
+    zoom:1;
+    }
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+/* HTML5
+------------------------------------------------------------*/
+section,article,aside,nav,header,footer,hgroup{
+    //display:block;
+}

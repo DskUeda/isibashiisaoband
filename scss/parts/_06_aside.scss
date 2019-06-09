@@ -1,0 +1,72 @@
+.cts-r {
+    h2 {
+        margin-bottom: 25px;
+        color: #fff;
+        font-size: 10px;
+        text-align: center;
+        background: url(../img/h2_bg.png) no-repeat 50% 50%;
+        background-size: 210px 36px;
+        .neon {
+            font-size: 18px;
+            font-family: 'Codystar', cursive;
+            font-weight: bold;
+            color: #f5cd5d;
+            text-shadow: 0px 0px 5px #f5bf5d;
+        }
+    }
+    ul {
+        li {
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+            h3 {
+                font-size: 16px;
+                //color: #f5cd5d;
+                //text-align: center;
+                text-shadow: 0px 0px 3px #f5bf5d;
+                border-left: 5px solid #f5cd5d;
+                padding: 3px 0 3px 10px;
+                margin-bottom: 10px;
+                line-height: 24px;
+                .facebook {
+                    float: right;
+                    &:hover {
+                        opacity: .9;
+                    }
+                    img {
+                        width: auto;
+                        height: 24px;
+                    }
+                }
+            }
+            .btn-link {
+                margin-bottom: 10px;
+                a {
+                    display: table;
+                    height: 40px;
+                    background-color: #f5cd5d;
+                    color: #000;
+                    text-decoration: none;
+                    width: 100%;
+                    border-radius: 5px;
+                    font-size: 12px;
+                    padding: 0 5px;
+                    &:hover {
+                        opacity: .9;
+                    }
+                    span {
+                        display: table-cell;
+                        vertical-align: middle;
+                        &:after {
+                            display: inline-block;
+                            content: ">";
+                            font-weight: bold;
+                            font-size: 12px;
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.content-wrap {
+    line-height: 1.8;
+    h2 {
+        text-align: center;
+        padding: 30px;
+        font-size: 12px;
+        color: #fff;
+        line-height: 1.2;
+        background: url(../img/h2_bg.png) no-repeat 50% 50%;
+        background-size: 80% 80%;
+        .neon {
+            font-family: 'Codystar', cursive;
+            color: #f5cd5d;
+            text-shadow: 0px 0px 5px #f5bf5d;
+            font-size: 28px;
+        }
+    }
+    .live-type {
+        color: #f5cd5d;
+        text-shadow: 0px 0px 5px #f5bf5d;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px dotted #f5cd5d;
+    }
+    &.schedule {
+        h3,.ttl {
+            color: #f5cd5d;
+        }
+        ul {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &.bio {
+        dl {
+            dt {
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #f5cd5d;
+            }
+            dd {
+                margin-left: 3em;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    &.disc, &.goods {
+        .table-wrap {
+            display: table;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            .cts-table {
+                width: 100%;
+                display: table-cell;
+                vertical-align: top;
+                &.table-l {
+                    &.disc-l {
+                        box-sizing: border-box;
+                        width: 120px;
+                        img {
+                            width: 120px;
+                            height: auto;
+                        }
+                    }
+                    &.goods-l {
+                        box-sizing: border-box;
+                        width: 300px;
+                        background-color: #fff;
+                        img {
+                            width: 300px;
+                            height: auto;
+                            padding: 10px;
+                        }
+                    }
+                    img {
+                        border: 1px solid #f5bf5d;
+                    }
+                }
+                &.table-r {
+                    padding-left: 20px;
+                    h3 {
+                        color: #f5cd5d;
+                    }
+                }
+            }
+        }
+    }
+    &.slide {
+        .wrap-slider {
+            border: 1px solid #f5bf5d;
+            overflow: hidden;
+        }
+    }
+}

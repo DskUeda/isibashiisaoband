@@ -1,0 +1,174 @@
+#gnav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #3C3C3C;
+    z-index: 1000;
+    //overflow-y: scroll;
+    border-right: 1px solid #666;
+    > dl {
+        > dt {
+            background: #000;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            padding: 15px 0;
+            line-height: 24px;
+            .close {
+                display: inline-block;
+                vertical-align: middle;
+                padding-right: 10px;
+                cursor: pointer;
+                float: right;
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+        dd {
+            .link {
+                li {
+                    display: table;
+                    margin: 0;
+                    border: none;
+                    width: 100%;
+                    border-bottom: solid 1px #2A2A2A;
+                    border-top: solid 1px #4D4D4D;
+                    //background: #333;
+                    color: #fff;
+                    &:after {
+                        content: '>';
+                        display: table-cell;
+                        vertical-align: middle;
+                        height: 50px;
+                        width: 5%;
+                        font-weight: bold;
+                    }
+                    a {
+                        display: table-cell;
+                        width: 95%;
+                        height: 50px;
+                        vertical-align: middle;
+                        text-decoration: none;
+                        padding-left: 1em;
+                        color: #f5cd5d;
+                    }
+                }
+            }
+        }
+    }
+}
+#tabs {
+    width: 100%;
+    background-color: #fff;
+    font-size: .8em;
+    .tab-head {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        border-bottom: none;
+        box-sizing: border-box;
+        li {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            border-top: solid 1px #4D4D4D;
+            border-right: solid 1px #4D4D4D;
+            border-bottom: solid 1px #2A2A2A;
+            border-left: solid 1px #2A2A2A;
+            background: #333;
+            &.ui-tabs-active {
+                font-size: 130%;
+                a {
+                    color: #f5cd5d;
+                }
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                display: block;
+                padding: 10px 0;
+            }
+        }
+    }
+    .tab-box {
+        //padding: 1em;
+        background-color: #3C3C3C;
+        color: #fff;
+        h2 {
+            font-weight: bold;
+            margin-bottom: .5em;
+        }
+        ul {
+            //padding-left: .5em;
+            li {
+                //margin-bottom: .5em;
+                a {
+                    color: #fff;
+                    &:hover {
+                        color: #f5cd5d;
+                    }
+                }
+            }
+        }
+        dl {
+            padding-left: .5em;
+            dt {
+                font-weight: bold;
+                float: left;
+                clear: both;
+            }
+            dd {
+                margin-bottom: .5em;
+                padding-left: .5em;
+                float: left;
+            }
+        }
+    }
+}
+#gnav-menu {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    display: table;
+    border: 2px dotted #f5cd5d;
+    box-shadow: 0 0 0px #f5bf5d;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 200;
+    //background-color: #000;
+    span {
+        font-size: 16px;
+        font-family: 'Codystar', cursive;
+        color: #f5cd5d;
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+}
+.menuOverLay {
+    content: '';
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+&.open {
+    .menuOverLay {
+        visibility: visible;
+        background: rgba(0,0,0,0.7);
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+        z-index: 250;
+    }
+}

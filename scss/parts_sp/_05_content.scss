@@ -1,0 +1,114 @@
+.content-wrap {
+    line-height: 1.8;
+    h2 {
+        text-align: center;
+        padding: 20px;
+        font-size: 10px;
+        color: #fff;
+        line-height: 1.2;
+        background: url(../img/h2_bg_sp.png) no-repeat 50% 50%;
+        background-size: 60% 60%;
+        .neon {
+            font-family: 'Codystar', cursive;
+            color: #f5cd5d;
+            text-shadow: 0px 0px 5px #f5bf5d;
+            font-size: 24px;
+        }
+    }
+    .live-type {
+        color: #f5cd5d;
+        text-shadow: 0px 0px 5px #f5bf5d;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px dotted #f5cd5d;
+    }
+    &.schedule {
+        h3 {
+            font-size: 1.5em;
+        }
+        h3,.ttl {
+            color: #f5cd5d;
+        }
+        ul {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &.bio {
+        dl {
+            dt {
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #f5cd5d;
+            }
+            dd {
+                margin-left: 3em;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    &.disc, &.goods {
+        .table-wrap {
+            display: table;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            .cts-table {
+                width: 100%;
+                display: table-cell;
+                vertical-align: top;
+                &.table-l {
+                    &.disc-l {
+                        box-sizing: border-box;
+                        width: 60px;
+                        img {
+                            width: 60px;
+                            height: auto;
+                        }
+                    }
+                    &.goods-l {
+                        box-sizing: border-box;
+                        width: 200px;
+                        background-color: #fff;
+                        img {
+                            width: 200px;
+                            height: auto;
+                            padding: 10px;
+                        }
+                    }
+                    img {
+                        border: 1px solid #f5bf5d;
+                    }
+                }
+                &.table-r {
+                    padding-left: 20px;
+                    h3 {
+                        color: #f5cd5d;
+                    }
+                }
+            }
+        }
+    }
+    &.slide {
+        .wrap-slider {
+            border: 1px solid #f5bf5d;
+            height: 71vw;
+            overflow: hidden;
+        }
+    }
+    &.contact {
+        .mface-text span {
+            color: #f5cd5d !important;
+        }
+        .mface-red {
+            color: #f5cd5d !important;
+        }
+        option {
+            color: #000 !important;
+        }
+        input[name="year-3"] {
+            width: 41px !important;
+        }
+    }
+}

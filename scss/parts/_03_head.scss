@@ -1,0 +1,162 @@
+.head-wrap {
+    background: url(#{$img_dir}head_bg_all.png) no-repeat 50% 50%;
+    width: 100%;
+    min-width: 1000px;
+    position: relative;
+    .head-mid {
+        width: 1000px;
+        height: 800px;
+        margin: 0 auto;
+        position: relative;
+        h1 {
+            width: 1000px;
+            text-align: right;
+            margin: 0 auto;
+            img {
+                padding-top: 350px;
+                width: 300px;
+                height: auto;
+            }
+        }
+        .move-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            .move-wrap {
+                position: relative;
+                .fadein-txt {
+                    position: absolute;
+                    top: 100px;
+                    display: none;
+                    &.isao {
+                        right: 400px;
+                    }
+                    &.kazuki {
+                        right: 300px;
+                    }
+                    &.kuni {
+                        left: 200px;
+                    }
+                    .name {
+                        padding-bottom: 10px;
+                        em {
+                            color: #f5cd5d;
+                        }
+                    }
+                    dl {
+                        overflow: hidden;
+                        dt {
+                            clear: both;
+                            float: left;
+                            font-size: .8em;
+                            line-height: 26px;
+                        }
+                        dd {
+                            float: left;
+                            padding-left: 1.2em;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+        }
+        .btn-tgt {
+            position: absolute;
+            right: 45px;
+            top: 440px;
+            .btn-bg {
+                display: table;
+                z-index: 500;
+                text-decoration: none;
+                border: 1px solid #444;
+                height: 60px;
+                width: 60px;
+                border-radius: 30px;
+                background-repeat: no-repeat;
+                background-size: 500px 400px;
+                float: left;
+                text-align: center;
+                opacity: .5;
+                &:not(:last-child) {
+                    margin-right: 8px;
+                }
+                &:hover {
+                border: 1px solid #f5cd5d;
+                opacity: 1;
+                }
+                &.isao {
+                    background-image: url(../img/head_bg_isao.png);
+                    background-position: -129px -15px;
+                }
+                &.kazuki {
+                    background-image: url(../img/head_bg_kazuki.png);
+                    background-position: -185px -88px;
+                }
+                &.kuni {
+                    background-image: url(../img/head_bg_kuni.png);
+                    background-position: -258px -93px;
+                }
+                span {
+                    display: none;
+                    //display: table-cell;
+                    vertical-align: bottom;
+                    color: #fff;
+                    font-size: 10px;
+                    text-shadow: 0px 0px 3px #f5bf5d;
+                }
+            }
+        }
+    }
+    .over-lay {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 800px;
+        background: rgba(15,15,15,.9);
+        display: none;
+        z-index: 1000;
+    }
+    .special {
+        position: absolute;
+        bottom: 2%;
+        right: 0;
+        z-index: 10;
+        a {
+            text-decoration: none;
+            display: table;
+            span {
+                display: table-cell;
+                background-color: #f5cd5d;
+                border-radius: 4px;
+                color: #000;
+                padding: 1%;
+                position: relative;
+                font-size: 12px;
+                text-align: center;
+                vertical-align: middle;
+                width: 10em;
+                &:before {
+                    position: absolute;
+                    bottom: 5px;
+                    right: -22px;
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    display: inline-block;
+                    border-width: 10px 0 10px 16px;
+                    border-color: transparent transparent transparent #f5cd5d;
+                    border-style: solid;
+                    padding-right: 1em;
+                }
+            }
+            img {
+                display: table-cell;
+                height: 100px;
+                width: auto;
+            }
+        }
+    }
+}

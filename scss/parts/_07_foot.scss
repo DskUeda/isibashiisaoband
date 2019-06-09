@@ -1,0 +1,27 @@
+.foot-wrap {
+    background-color: #b99149;
+    text-align: center;
+    padding: 0 0 50px;
+    margin-top: 50px;
+    border-top: 2px solid #b99149;
+    &:before {
+        display: block;
+        content: "";
+        height: 1px;
+        width: 100%;
+        padding: 0 0 50px;
+        border-top: 2px solid #000;
+    }
+    .sns-area {
+        .fb-like {
+            height: 20px;
+            &>span {
+                vertical-align: top !important;
+            }
+        }
+    }
+    #copyright {
+        color: #000;
+        margin-top: 5px;
+    }
+}

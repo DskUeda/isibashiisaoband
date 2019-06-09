@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+$img_dir: "../img/";
+
+@import "parts/_00_normalize.scss";
+@import "parts/_01_reset.scss";
+body {
+    display: block;
+    font-family: meiryo, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #000;
+    * {
+        box-sizing: border-box;
+        background: transparent;
+    }
+    .sp {
+        display: none;
+    }
+    @import "parts/_02_common.scss";
+    @import "parts/_03_head.scss";
+    @import "parts/_04_nav.scss";
+    @import "parts/_05_content.scss";
+    @import "parts/_06_aside.scss";
+    @import "parts/_07_foot.scss";
+    @import "parts/_08_btn_top.scss";
+    @import "parts/_09_form.scss";
+    //@import "parts/_10_slider.scss";
+}

@@ -1,0 +1,41 @@
+.slider-container, .slider-nav-container {
+    display: none;
+    position: relative;
+}
+.slider-container.initialized, .slider-nav-container.initialized {
+    display: block;
+}
+.slider-nav-container {
+    margin-top: 18px;
+}
+.slider {
+    overflow: hidden;
+}
+.slider-nav {
+    margin: 0 26px;
+}
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    height: 36px;
+    margin-top: -18px;  /* 高さの半分だけネガティブマージン */
+    color: #aaa;
+    line-height: 36px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 10;  /* 重要 */
+}
+.slider-prev {
+    left: 0;
+}
+.slider-next {
+    right: 0;
+}
+.slick-slide {
+    outline: 0;
+}
+.slider .slick-slide > img, .slider-nav .slick-slide > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

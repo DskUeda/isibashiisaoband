@@ -1,0 +1,27 @@
+//header
+.head-wrap {
+    width: 100%;
+}
+.main-wrap {
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    .cts-l {
+        float: left;
+        width: 740px;
+        //position: relative;
+        .content-wrap {
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+    }
+    .cts-r {
+        float: right;
+        width: 210px;
+        margin-top: 70px;
+    }
+}
+//footer
+.foot-wrap {
+    width: 100%;
+}
